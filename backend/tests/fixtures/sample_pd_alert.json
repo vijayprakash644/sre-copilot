@@ -1,0 +1,23 @@
+{
+  "messages": [
+    {
+      "event": {
+        "event_type": "incident.triggered",
+        "data": {
+          "id": "Q2CZQW3HO4HQRY",
+          "number": 1234,
+          "title": "High CPU usage on api-server-prod",
+          "description": "CPU usage has exceeded 90% for 5 minutes on api-server-prod",
+          "status": "triggered",
+          "urgency": "high",
+          "created_at": "2024-01-15T03:00:00Z",
+          "service": {
+            "name": "api-server"
+          },
+          "labels": {},
+          "annotations": {}
+        }
+      }
+    }
+  ]
+}

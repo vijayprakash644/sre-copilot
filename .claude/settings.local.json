@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x c:/Users/vijay/Desktop/sre-copilot/scripts/test_alert.sh c:/Users/vijay/Desktop/sre-copilot/scripts/setup_slack.sh)"
+    ]
+  }
+}

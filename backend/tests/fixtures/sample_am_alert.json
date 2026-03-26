@@ -1,0 +1,43 @@
+{
+  "version": "4",
+  "groupKey": "{}:{alertname=\"HighErrorRate\"}",
+  "truncatedAlerts": 0,
+  "status": "firing",
+  "receiver": "slack-notifications",
+  "groupLabels": {
+    "alertname": "HighErrorRate"
+  },
+  "commonLabels": {
+    "alertname": "HighErrorRate",
+    "service": "payment-service",
+    "severity": "critical",
+    "env": "production"
+  },
+  "commonAnnotations": {
+    "summary": "High error rate on payment-service",
+    "description": "Error rate is above 5% for the last 5 minutes on payment-service in production",
+    "runbook_url": "https://wiki.example.com/runbooks/payment-service"
+  },
+  "externalURL": "http://alertmanager.example.com",
+  "alerts": [
+    {
+      "status": "firing",
+      "labels": {
+        "alertname": "HighErrorRate",
+        "service": "payment-service",
+        "severity": "critical",
+        "env": "production",
+        "instance": "payment-service-1"
+      },
+      "annotations": {
+        "summary": "High error rate on payment-service",
+        "description": "Error rate is above 5% for the last 5 minutes",
+        "runbook_url": "https://wiki.example.com/runbooks/payment-service"
+      },
+      "startsAt": "2024-01-15T03:05:00Z",
+      "endsAt": "0001-01-01T00:00:00Z",
+      "generatorURL": "http://prometheus.example.com/...",
+      "fingerprint": "abc123def456"
+    }
+  ]
+}

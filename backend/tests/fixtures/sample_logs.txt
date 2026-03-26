@@ -1,0 +1,15 @@
+2024-01-15T03:00:01Z INFO  Starting request processing
+2024-01-15T03:00:02Z ERROR Failed to connect to database: connection refused
+2024-01-15T03:00:02Z ERROR Retry attempt 1/3 for db connection
+2024-01-15T03:00:03Z ERROR Retry attempt 2/3 for db connection
+2024-01-15T03:00:04Z ERROR Retry attempt 3/3 for db connection
+2024-01-15T03:00:04Z FATAL Database connection pool exhausted
+2024-01-15T03:00:05Z ERROR HTTP 500 returned for POST /api/payment
+2024-01-15T03:00:05Z ERROR HTTP 500 returned for POST /api/payment
+2024-01-15T03:00:06Z WARN  Queue depth: 847 pending requests
+2024-01-15T03:00:07Z ERROR HTTP 503 Service Unavailable
+2024-01-15T03:00:08Z INFO  Health check: FAIL (db unreachable)
+2024-01-15T03:00:09Z ERROR OOMKilled: container payment-service-1 killed
+2024-01-15T03:00:10Z INFO  Restarting container payment-service-1
+2024-01-15T03:00:15Z INFO  Container payment-service-1 started
+2024-01-15T03:00:16Z ERROR Same database connection error persisting
